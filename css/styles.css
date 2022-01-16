@@ -111,6 +111,10 @@ img {
 .logo-header{
   color:var(--second-title-color);
   margin-right: 93px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .logo-header:hover,
@@ -142,6 +146,10 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--second-title-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .accent{
   color: var(--accent-color);
@@ -166,6 +174,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--p-title-color); 
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .contacts-icon{
   margin-right: 10px;
@@ -186,7 +198,6 @@ img {
 
 
 .hero {
-  
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -223,9 +234,13 @@ img {
   letter-spacing: 0.06em;
   background: var(--accent-color);
   color: var(--background);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .hero-btn:hover{
-  background: var(--second-btn-color);
+  background-color: var(--second-btn-color);
 }
 
 /* -----------------------BENEFITS-------------- */
@@ -338,6 +353,10 @@ border-radius: 0px 0px 4px 4px;
 }
 .team-social-link{
   color:var(--icons-color);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .team-social-icon{
@@ -357,7 +376,6 @@ border-radius: 0px 0px 4px 4px;
 .clients-logo{
   height: 92px;
   width: 170px;
-
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 
@@ -365,6 +383,10 @@ border-radius: 0px 0px 4px 4px;
   justify-content: center;
   align-items: center;
   color:var(--icons-color);
+
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .clients-icon{
   fill: currentColor;
@@ -396,6 +418,10 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
   background: var(--background-elements);
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .btn-accent{ 
@@ -419,6 +445,10 @@ border-radius: 0px 0px 4px 4px;
 }
 .portfolio-links{
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .portfolio-links:hover,
 .portfolio-links:focus{
@@ -460,6 +490,10 @@ border-radius: 0px 0px 4px 4px;
 }
 .logo-footer{
   color: var(--background);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .direct-block{
   margin-top: 20px;
@@ -474,9 +508,17 @@ border-radius: 0px 0px 4px 4px;
 }
 .footer-adds{
   color: var(--background);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-cont{
   color: var(--footer-cont-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-list:last-child{
 	margin-bottom: 0;
@@ -504,6 +546,10 @@ border-radius: 0px 0px 4px 4px;
 }
 .footer-social-link{
   background-color: var(--footer-icons-background); 
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .footer-social-icon{
