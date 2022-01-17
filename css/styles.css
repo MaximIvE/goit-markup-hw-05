@@ -7,6 +7,7 @@
   --footer-hover-text-two: rgba(255, 255, 255, 0.4);
   --footer-icons-background: rgba(255, 255, 255, 0.1);
   --footer-hover-accent: rgba(33, 149, 243, 0.9);
+  --portf-img-txt-color:rgba(33, 150, 243, 0.9);
   --spec-label-background: rgba(47, 48, 58, 0.8);
   --second-btn-color:#188CE8;
   --accent-color: #2196F3;
@@ -162,7 +163,6 @@ img {
   position: absolute;
   left: 0;
   bottom: -31.5px;
-
 }
 
 .contacts{
@@ -436,7 +436,6 @@ border-radius: 0px 0px 4px 4px;
 }
 .filter-item{
   margin-right: 8px;
-  
 }
 .filter-item:last-child{
 	margin-right: 0px;
@@ -471,20 +470,52 @@ border-radius: 0px 0px 4px 4px;
   flex-wrap: wrap;
 }
 .portfolio-item{
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+.portfolio-item:hover .pirtfolio-img-txt{
+  transform: translateY(0);
+
+}
 .portfolio-links{
   display: block;
-
   transition-property: box-shadow;
   transition-duration: var(--effect-time);
-  transition-timing-function: var(--function-time); 
-}
+  transition-timing-function: var(--function-time);
+  }
+
 .portfolio-links:hover,
 .portfolio-links:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.portfolio-item-wrap{
+  position: relative;
+  overflow: hidden;
+}
+
+.pirtfolio-img-txt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--first-title-color);
+  background-color: var(--portf-img-txt-color);
+  height: 100%;
+  
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: var(--effect-time);
+  transition-timing-function: var(--function-time); 
+    /* И на случай переполнения контента */
+    /* overflow: auto;     */
+}
+
 .portfolio-content{
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
