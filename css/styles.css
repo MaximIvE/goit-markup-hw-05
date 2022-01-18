@@ -9,6 +9,9 @@
   --footer-hover-accent: rgba(33, 149, 243, 0.9);
   --portf-img-txt-color:rgba(33, 150, 243, 0.9);
   --spec-label-background: rgba(47, 48, 58, 0.8);
+  --modal-background: rgba(0, 0, 0, 0.2);
+  --border-close-btn: rgba(0, 0, 0, 0.1);
+ 
   --second-btn-color:#188CE8;
   --accent-color: #2196F3;
   --first-title-color: #ffffff;
@@ -620,4 +623,46 @@ border-radius: 0px 0px 4px 4px;
 .footer-social-link:hover,
 .footer-social-link:focus{
   background-color: var(--accent-color);
+}
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--modal-background);
+  transition: opacity 500ms ,visibslity 500ms;
+  transition-timing-function: var(--function-time);
+}
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background: var(--background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-close{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border-close-btn);
+  background-color: var(--background);
+  /* box-sizing: border-box; */
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+  /* visibility: hidden; */
 }
