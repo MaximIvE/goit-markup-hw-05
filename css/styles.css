@@ -28,6 +28,10 @@
 *::after {
   box-sizing: border-box;
 } */
+*,
+*:focus{
+  outline-color: var(--p-title-color);
+}
 
 body {
   margin: 0;
@@ -108,10 +112,11 @@ img {
 
 .logo-header{
   color:var(--second-title-color);
-  margin-right: 93px;
+  margin-right: 89px;
   transition-property: color;
   transition-duration: var(--effect-time);
   transition-timing-function: var(--function-time); 
+  padding: 2px 4px;
 }
 
 .accent-logo{
@@ -151,6 +156,7 @@ img {
   transition-property: color;
   transition-duration: var(--effect-time);
   transition-timing-function: var(--function-time); 
+  padding: 2px 4px;
 }
 .accent{
   color: var(--accent-color);
@@ -191,11 +197,16 @@ img {
   transition-property: color;
   transition-duration: var(--effect-time);
   transition-timing-function: var(--function-time); 
+  padding: 2px 4px;
 }
+
 .contacts-icon{
   margin-right: 10px;
   fill: currentColor;
+  margin-bottom: auto;
+  margin-top: auto;
 }
+
 
 /* --------------------MAIN-------------------- */
 /*        -------------HERO---------------     */
@@ -425,9 +436,12 @@ border-radius: 0px 0px 4px 4px;
 .clients-icon{
   fill: currentColor;
 }
-.clients-logo:hover,
-.clients-logo:focus{
+.clients-logo:hover{
   border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.clients-logo:focus{
+  outline-color: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -558,7 +572,8 @@ border-radius: 0px 0px 4px 4px;
 
   transition-property: color;
   transition-duration: var(--effect-time);
-  transition-timing-function: var(--function-time); 
+  transition-timing-function: var(--function-time);
+  padding: 2px 4px; 
 }
 .direct-block{
   margin-top: 20px;
@@ -577,6 +592,7 @@ border-radius: 0px 0px 4px 4px;
   transition-property: color;
   transition-duration: var(--effect-time);
   transition-timing-function: var(--function-time); 
+  padding: 2px 4px;
 }
 .footer-cont{
   color: var(--footer-cont-color);
@@ -584,6 +600,7 @@ border-radius: 0px 0px 4px 4px;
   transition-property: color;
   transition-duration: var(--effect-time);
   transition-timing-function: var(--function-time); 
+  padding: 2px 4px;
 }
 .footer-list:last-child{
 	margin-bottom: 0;
@@ -659,6 +676,7 @@ border-radius: 0px 0px 4px 4px;
   position: absolute;
   top: 8px;
   right: 8px;
+  cursor: pointer;
 }
 
 .is-hidden{
