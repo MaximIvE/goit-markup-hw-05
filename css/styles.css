@@ -525,7 +525,7 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   background-color: var(--portf-img-txt-color);
-  height: 101%;
+  height: 100%;
   
   transform: translateY(100%);
   transition-property: transform;
